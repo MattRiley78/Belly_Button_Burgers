@@ -8,6 +8,7 @@ Specimen sample data is stored in a json file, samples.json.  A Javascript file 
 Additional dependencies and libraries used to help create and style the html file include Bootstrap, Plotly, d3, and CSS.
 
 ## Original Concept
+![D1](https://user-images.githubusercontent.com/106561880/187550682-0c8c1298-d579-4f67-b3c4-5f24e8ea0197.png)
 
 ## Additional Elements
 - Background Image for Jumbotron Header
