@@ -1,0 +1,15 @@
+body {
+    color: #000000;
+}
+.jumbotron {
+    background-image: url("../images/bevy-of-bellies.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+}
+.background {
+    background-image: linear-gradient(#bfd3e7 , #ffffff);
+}
+.center {
+    margin: auto;
+    padding: 10px;
+}

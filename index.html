@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body class="background">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center text-white"
+        style="background-size: 100%; border-style: solid; border-color:rgb(2, 37, 58); border-width: 2;">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p></p>
+      </div>
+    </div>
+    <div class="row">
+      
+      <nav class="navbar navbar-info bg-info">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Home</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#selDataset">ID Entry</a></li>
+            <li><a href="#bar">Top 10 Cultures</a></li>
+            <li><a href="#gauge">Washing Frequency</a></li>
+            <li><a href="#bubble">Bubble Chart</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div>
+      </nav>
+      
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <font color="#337AC5">
+          <div class="col-md-4">
+            
+              <h3>Would You Eat a <br>Belly Button Burger?<br><small>Use the interactive charts to explore the dataset!</small></h3>
+            
+            </div>
+          <div class="col-md-8">
+            
+              Believe it or not, those innovative, tastes-just-like-beef vegan burgers are not just a combination of black beans and beet juice.  A large initiative is underway to synthesize edibile proteins from micro-organisms, especially ones that taste like our favorite foods.  Studies have already been performed that have synthesized proteins from microbes found in Yellowstone National Park.  Some of these impossible patties may have already shown up at your trendy burger shop.<br><br>
+              Where will be the next big source for protein synthesized from microbes?  Some believe we have to look no further than our own navels.  That's right, the good old belly button.  It fed us while we were in the womb, and it can feed us again.  There is a plethora of bacteria and other microbes found in that funny knob above our waists.<br><br>
+              This page is the result of a collection study of the great biodiversity found in belly buttons.  These charts provide anonymous information about our study participants.  Do the types of bacteria differ for different ages, genders, locations, ethnicities?  Is all that good microscopic food source washed down the drain from basic cleanliness?   Choose a test subject ID to learn more... and pass the ketchup!
+            
+            </div>
+        </font>
+      </div>
+  </div><br>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4 col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-xs-10 col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-xs-10 col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+    <div class="row">
+      
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Home</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#selDataset">ID Entry</a></li>
+            <li><a href="#bar">Top 10 Cultures</a></li>
+            <li><a href="#gauge">Washing Frequency</a></li>
+            <li><a href="#bubble">Bubble Chart</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div>
+      </nav>
+      
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/charts.js"></script>
+
+</body>
+
+</html>
